@@ -59,5 +59,9 @@
 }
 
 .placeholder-img {
-  background-color: #464544;
+  background-image: url("https://media.istockphoto.com/id/1291389011/photo/criminal-wearing-black-balaclava-and-hoodie-in-the-dark.jpg?s=612x612&w=0&k=20&c=Y15Q92J0AtLjUGPnY_XdDzH09P2h6MObu7V_vd-A_mU=");
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  
 }

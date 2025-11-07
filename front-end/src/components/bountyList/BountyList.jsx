@@ -9,7 +9,7 @@ const BountyList = ({ criminalList }) => {
     <main>
       <CardHeader content="Bounties" />
       <FilterList />
-      <BountyCardList />
+      <BountyCardList criminalList={criminalList} />
     </main>
   )
 }
