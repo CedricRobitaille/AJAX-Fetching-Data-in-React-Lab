@@ -1,0 +1,63 @@
+.bounty-card {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: 100%;
+  min-width: 0;
+  max-width: 250px;
+
+  background-color: #fff;
+  border-radius: 12px;
+  outline: 0px solid #d6d6d460;
+
+  box-shadow: 0px 3px 8px -1px #5E5D5920;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.bounty-card:hover {
+  background-color: #f8f8f7;
+  outline: 2px solid #83828140;
+  box-shadow: 0px 0px 0px 0px #5E5D5910;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+  padding: 1rem 1rem 1.5rem 1rem;
+  margin: 0;
+  flex: 1 1 auto;
+  width: auto;
+}
+
+.card-content h2 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-content p {
+  font-size: .85rem;
+  color: #88817C;
+  text-transform: capitalize;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bounty-card img {
+  flex: 1 1 auto;
+  width: auto;
+  aspect-ratio: 1/1;
+  border-radius: 12px 12px 0 0;
+
+  object-fit: cover;
+}
+
+.placeholder-img {
+  background-color: #464544;
+}
