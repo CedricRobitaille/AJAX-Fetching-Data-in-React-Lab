@@ -7,4 +7,4 @@ const App = () => {
   )
 }
 
-exporrt default App;
+export default App;
