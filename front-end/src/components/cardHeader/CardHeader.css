@@ -1,0 +1,8 @@
+.card-header-text {
+  font-size: 1.25rem;
+  padding-bottom: .75rem;
+  border-bottom: 1.5px solid #F4F0ED;
+
+  width: 100%;
+  font-weight: 600;
+}

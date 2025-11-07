@@ -30,6 +30,8 @@ nav input {
   border: 1px solid #dfd9d8;
   border-radius: 8px;
   font-size: 1.125rem;
+
+  width: 100%;
 }
 
 input:focus {

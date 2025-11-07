@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Girassol&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900');
+
 * {
   margin: 0;
   padding: 0;
@@ -9,5 +11,32 @@ html {
 }
 
 body {
+  height: 100vh;
+}
+
+#root {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: .5rem;
+
+  height: 100%;
   padding: 1rem;
 }
+
+h1 {
+  font-family: "Girassol", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #282523;
+}
+
+h2, h3, h4, h5, h6, p, a, li, ul, button, input {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  text-decoration: none;
+  list-style: none;
+  color: #282523;
+}
+

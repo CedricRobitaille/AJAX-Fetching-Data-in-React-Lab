@@ -1,0 +1,14 @@
+main {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  gap: 1rem;
+
+  overflow-y: auto;
+  width: 100%;
+  background-color: #fff;
+  height: 100%;
+  border-radius: 1rem;
+  padding: 1rem;
+
+  box-shadow: 0px 6px 12px -4px #948F8B20;
+}
