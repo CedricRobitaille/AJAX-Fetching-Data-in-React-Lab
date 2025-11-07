@@ -11,6 +11,9 @@ const get = async () => {
     return data;
   } catch (error) {
     console.error("Error getting data:", error);
+    const dummyResponse = await fetch("/dummy-data.json");
+    const dummyData = await dummyResponse.json()
+    return dummyData
   }
 }
 

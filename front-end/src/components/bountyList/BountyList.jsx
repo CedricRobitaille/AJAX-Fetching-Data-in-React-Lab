@@ -3,7 +3,7 @@ import CardHeader from "../cardHeader/CardHeader";
 import FilterList from "../filterList/FilterList";
 import BountyCardList from "../bountryCardList/BountryCardList";
 
-const BountyList = (props) => {
+const BountyList = ({ criminalList }) => {
 
   return (
     <main>

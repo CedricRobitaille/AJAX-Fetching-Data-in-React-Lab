@@ -8,7 +8,7 @@ import BountyList from './components/bountyList/BountyList.jsx'
 
 const App = () => {
 
-  const [criminalList, setCriminalList] = useState()
+  const [criminalList, setCriminalList] = useState([])
 
   useEffect(() => {
     const fetchDefaultData = async () => {
@@ -16,21 +16,19 @@ const App = () => {
       setCriminalList(data)
     };
     fetchDefaultData();
+
   }, [])
-  
+
   setTimeout(() => {
     console.log(criminalList)
-  }, 1000);
-
+  }, 2000);
   return (
     <>
       <Nav />
       <section className="primary-content">
-        <BountyList />
+        <BountyList criminalList={criminalList} />
       </section>
-      
     </>
-    
   )
 }
 
