@@ -4,7 +4,7 @@ import "./App.css"
 import * as searchService from "./services/searchService"
 
 import Nav from "./components/nav/Nav.jsx"
-import BountyList from './components/bountyList/BountyList.jsx'
+import Main from './components/main/Main.jsx'
 
 const App = () => {
 
@@ -25,9 +25,7 @@ const App = () => {
   return (
     <>
       <Nav />
-      <section className="primary-content">
-        <BountyList criminalList={criminalList} />
-      </section>
+      <Main criminalList={criminalList} />
     </>
   )
 }
