@@ -1,10 +1,16 @@
 import "./BountyResults.css"
 
+import Target from "../target/Target";
+import Bounty from "../bounty/Bounty";
+import Description from "../description/Description";
+
 const BountyResults = (props) => {
 
   return (
     <section className="bounty-results">
-      <p>Hello World</p>
+      <Target />
+      <Bounty />
+      <Description />
     </section>
   )
 }
