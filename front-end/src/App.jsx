@@ -1,9 +1,14 @@
 import { useState } from 'react'
 
+import Nav from "./components/nav/Nav.jsx"
 const App = () => {
 
   return (
-    <h1>Hello World!</h1>
+    <>
+      <Nav />
+      
+    </>
+    
   )
 }
 
