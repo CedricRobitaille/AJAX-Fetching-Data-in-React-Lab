@@ -8,8 +8,8 @@ const BountyResults = ({ currentBounty }) => {
 
   return (
     <section className="bounty-results">
-      <Target currentBounty={currentBounty}/>
-      <Bounty />
+      <Target currentBounty={currentBounty} />
+      <Bounty currentBounty={currentBounty} />
       <Description />
     </section>
   )

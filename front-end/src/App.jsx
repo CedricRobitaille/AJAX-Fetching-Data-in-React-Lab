@@ -19,9 +19,7 @@ const App = () => {
 
   }, [])
 
-  setTimeout(() => {
-    console.log(criminalList)
-  }, 2000);
+  
   return (
     <>
       <Nav />
