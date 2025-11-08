@@ -1,6 +1,12 @@
 .horizontal-collection {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 1rem;
+}
+
+.horizontal-collection hr {
+  border: none;
+  height: .5px;
+  background-color: #dbd8d4;
 }

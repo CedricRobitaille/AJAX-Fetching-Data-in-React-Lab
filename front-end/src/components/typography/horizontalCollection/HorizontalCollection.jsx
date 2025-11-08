@@ -13,6 +13,7 @@ const HorizontalCollection = ({ title, message, bold }) => {
   return (
     <div className="horizontal-collection">
       <Label title={title} />
+      <hr />
       {bold ? <p><strong>{message}</strong></p> : <p>{message}</p>}
     </div>
   )

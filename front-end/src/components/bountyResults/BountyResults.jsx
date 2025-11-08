@@ -10,7 +10,7 @@ const BountyResults = ({ currentBounty }) => {
     <section className="bounty-results">
       <Target currentBounty={currentBounty} />
       <Bounty currentBounty={currentBounty} />
-      <Description />
+      <Description currentBounty={currentBounty} />
     </section>
   )
 }
