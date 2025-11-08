@@ -2,12 +2,13 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  column-gap: 1rem;
-  row-gap: 2.5rem;
+  column-gap: 2rem;
+  row-gap: 3rem;
   height: fit-content;
 
-  padding: 0 .25rem .5rem .25rem;
+  padding: .5rem .25rem .5rem .25rem;
 
   max-height: 100%;
-  overflow: visible auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }

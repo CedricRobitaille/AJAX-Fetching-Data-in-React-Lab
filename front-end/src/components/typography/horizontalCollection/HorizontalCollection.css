@@ -5,6 +5,10 @@
   gap: 1rem;
 }
 
+.horizontal-collection p {
+  text-transform: capitalize;
+}
+
 .horizontal-collection hr {
   border: none;
   height: .5px;

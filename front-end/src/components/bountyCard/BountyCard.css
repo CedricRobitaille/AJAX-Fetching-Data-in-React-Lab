@@ -10,15 +10,15 @@
   border-radius: 12px;
   outline: 0px solid #d6d6d460;
 
-  box-shadow: 0px 3px 8px -1px #5E5D5920;
+  box-shadow: 0px 4px 12px -2px #5E5D5940;
   cursor: pointer;
   transition: .5s;
 }
 
 .bounty-card:hover {
-  background-color: #f8f8f7;
-  outline: 2px solid #83828140;
-  box-shadow: 0px 0px 0px 0px #5E5D5910;
+  outline: 1px solid #d6d6d460;
+  box-shadow: 0px 8px 20px -2px #5E5D5970;
+  transform: scale(1.04);
 }
 
 .card-content {
