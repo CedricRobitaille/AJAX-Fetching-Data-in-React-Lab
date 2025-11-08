@@ -4,11 +4,11 @@ import Target from "../target/Target";
 import Bounty from "../bounty/Bounty";
 import Description from "../description/Description";
 
-const BountyResults = (props) => {
+const BountyResults = ({ currentBounty }) => {
 
   return (
     <section className="bounty-results">
-      <Target />
+      <Target currentBounty={currentBounty}/>
       <Bounty />
       <Description />
     </section>

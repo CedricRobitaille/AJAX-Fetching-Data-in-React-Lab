@@ -1,0 +1,13 @@
+.headshot {
+  padding: 2rem;
+  background-color: #EFEEEE;
+  border-radius: 16px;
+}
+
+.headshot img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 12px;
+  cursor: pointer;
+}

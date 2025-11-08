@@ -16,7 +16,7 @@ const Main = ({ criminalList }) => {
   return (
     <section className="primary-content">
       <BountyList criminalList={criminalList} handleBountySelection={handleBountySelection} />
-      {currentBounty && <BountyResults />}
+      {currentBounty && <BountyResults currentBounty={currentBounty}/>}
       
     </section>
   )
