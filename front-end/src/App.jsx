@@ -27,10 +27,18 @@ const App = () => {
     setCriminalList(newCriminalList);
   }
 
+  const searchResults = async (input) => {
+    const data = await searchService.show(input)
+    if (data) {
+      setCriminalList(data);
+    } else {
+      console.error(`Error searching for ${input.title}: No value was found.`)
+    }
+  }
   
   return (
     <>
-      <Nav />
+      <Nav searchResults={searchResults} />
       <Main criminalList={criminalList} fetchNewData={fetchNewData} />
     </>
   )

@@ -4,12 +4,10 @@ let title = null;
 let status = null
 
 const get = async (params) => {
-  console.log(params)
   if ("pageCount" in params) {
     page = params.pageCount;
   }
   const paramList = `?page=${page}`
-  console.log(paramList);
   try {
     const response = await fetch(`https://api.fbi.gov/wanted/v1/list/${paramList}`);
 
@@ -34,9 +32,10 @@ const get = async (params) => {
   }
 }
 
-const show = async (param) => {
+const show = async (params) => {
+  const title = params.title;
   try {
-    const response = await fetch(`/${param}`);
+    const response = fetch(`https://api.fbi.gov/wanted/v1/list/?title=${title}`);
     if (!response.ok) {
       throw new Error(error);
     }
