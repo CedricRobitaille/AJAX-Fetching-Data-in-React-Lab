@@ -12,18 +12,26 @@ const App = () => {
 
   useEffect(() => {
     const fetchDefaultData = async () => {
-      const data = await searchService.get()
+      const data = await searchService.get({})
       setCriminalList(data)
     };
     fetchDefaultData();
 
-  }, [])
+  }, []);
+
+  const fetchNewData = async (params) => {
+    const data = await searchService.get(params)
+    console.log("DataFetched: ", data)
+    const newCriminalList = [...criminalList, ...data]
+    console.log("NEW CRIMINAL LIST: ", newCriminalList)
+    setCriminalList(newCriminalList);
+  }
 
   
   return (
     <>
       <Nav />
-      <Main criminalList={criminalList} />
+      <Main criminalList={criminalList} fetchNewData={fetchNewData} />
     </>
   )
 }

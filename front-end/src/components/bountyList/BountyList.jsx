@@ -3,13 +3,13 @@ import CardHeader from "../cardHeader/CardHeader";
 import FilterList from "../filterList/FilterList";
 import BountyCardList from "../bountryCardList/BountryCardList";
 
-const BountyList = ({ criminalList, handleBountySelection }) => {
+const BountyList = ({ criminalList, handleBountySelection, fetchNewData }) => {
 
   return (
-    <main>
+    <main onScroll={() => {handleScroll(event)}}>
       <CardHeader content="Bounties" />
       <FilterList />
-      <BountyCardList criminalList={criminalList} handleBountySelection={handleBountySelection} />
+      <BountyCardList criminalList={criminalList} handleBountySelection={handleBountySelection} fetchNewData={fetchNewData} />
     </main>
   )
 }

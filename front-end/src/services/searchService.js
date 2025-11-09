@@ -1,6 +1,17 @@
-const get = async () => {
+let page = 1;
+let pageSize = 20;
+let title = null;
+let status = null
+
+const get = async (params) => {
+  console.log(params)
+  if ("pageCount" in params) {
+    page = params.pageCount;
+  }
+  const paramList = `?page=${page}`
+  console.log(paramList);
   try {
-    const response = await fetch("https://api.fbi.gov/wanted/v1/list/");
+    const response = await fetch(`https://api.fbi.gov/wanted/v1/list/${paramList}`);
 
     // Check for errors
     if (!response.ok) {
@@ -10,7 +21,7 @@ const get = async () => {
     // All's good, let's parse the data
     const data = await response.json();
     console.log("Got data: ", data);
-    return data;
+    return data.items;
 
   } catch (error) {
     // Log Error
