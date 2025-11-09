@@ -16,7 +16,6 @@ const App = () => {
       setCriminalList(data)
     };
     fetchDefaultData();
-
   }, []);
 
   const fetchNewData = async (params) => {
